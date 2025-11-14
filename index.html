@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strings of Legacy: Editorial</title>
+    <title>Strings of Legacy: Editorial - AOS Motion</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
         
@@ -30,6 +32,35 @@
             padding-right: 0.1em;
             color: rgb(251, 191, 36);
         }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Enhanced hover effects */
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(251, 191, 36, 0.15);
+        }
+
+        /* AOS custom animations */
+        [data-aos] {
+            pointer-events: none;
+        }
+
+        [data-aos].aos-animate {
+            pointer-events: auto;
+        }
+
+        /* Parallax effect for hero */
+        .hero-bg {
+            will-change: transform;
+        }
     </style>
 </head>
 <body class="bg-black text-white font-sans antialiased">
@@ -37,24 +68,24 @@
     <!-- Hero Section - Large Typography -->
     <section class="relative min-h-screen flex items-center justify-center px-4 py-16 md:px-12 md:py-24 overflow-hidden">
         <!-- Background Image -->
-        <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 z-0 hero-bg" data-aos="zoom-out" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
             <img src="https://storage.googleapis.com/funnel-ai-production/chat/btiwF2DNDeZsyA4HvFSx/PHOTO-2025-08-28-10-24-03.jpg" alt="Bourbon Collection" class="w-full h-full object-cover opacity-20" loading="eager">
             <div class="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black"></div>
         </div>
         
         <!-- Hero Content -->
         <div class="relative z-10 w-full max-w-6xl mx-auto text-center">
-            <div class="mb-8">
+            <div class="mb-8" data-aos="fade-down" data-aos-delay="0">
                 <span class="text-amber-400 text-sm tracking-[0.3em] uppercase font-light">Limited Edition</span>
             </div>
             
-            <h1 class="editorial-text font-serif font-bold mb-8 text-white">
+            <h1 class="editorial-text font-serif font-bold mb-8 text-white" data-aos="fade-up" data-aos-delay="200">
                 STRINGS<br>
                 <span class="text-amber-400">OF</span><br>
                 LEGACY
             </h1>
             
-            <div class="max-w-2xl mx-auto">
+            <div class="max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="400">
                 <p class="text-xl text-gray-300 leading-relaxed font-light md:text-2xl">
                     Four distinct expressions inspired by the iconic Gibson guitars that shaped John Lee Hooker's legendary sound. Each bourbon tells a chapter of the story.
                 </p>
@@ -65,16 +96,16 @@
     <!-- Editorial Introduction -->
     <section class="py-16 px-4 md:py-24 md:px-12 bg-black">
         <div class="w-full max-w-4xl mx-auto">
-            <div class="drop-cap text-2xl text-gray-300 leading-relaxed font-light md:text-3xl">
+            <div class="drop-cap text-2xl text-gray-300 leading-relaxed font-light md:text-3xl" data-aos="fade-up">
                 At John Lee Hooker Legacy Spirits, we believe a life's work can be tasted as well as heard. My grandfather, John Lee Hooker, poured his soul into his music, and his iconic Gibson guitars were essential to his powerful sound.
             </div>
             
-            <div class="mt-12 pt-12 border-t border-gray-800">
+            <div class="mt-12 pt-12 border-t border-gray-800" data-aos="fade-up" data-aos-delay="200">
                 <p class="text-xl text-gray-300 leading-relaxed font-light md:text-2xl mb-8">
                     We are proud to partner with Gibson for the <span class="text-amber-400 font-medium">Strings of Legacy Kentucky Bourbon Collection</span>. This limited edition series features four distinct 8 year old, cask strength single barrels distilled at Bardstown Bourbon Company.
                 </p>
                 
-                <p class="text-3xl text-amber-400 font-serif italic leading-relaxed md:text-4xl text-center mt-16">
+                <p class="text-3xl text-amber-400 font-serif italic leading-relaxed md:text-4xl text-center mt-16" data-aos="zoom-in" data-aos-delay="400">
                     "This is history you can taste."
                 </p>
             </div>
@@ -86,14 +117,14 @@
         <div class="w-full max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
                 <!-- Large Image - Left Column -->
-                <div class="lg:col-span-7 lg:sticky lg:top-24">
+                <div class="lg:col-span-7 lg:sticky lg:top-24" data-aos="fade-right">
                     <div class="aspect-[4/5] w-full overflow-hidden rounded-[20px]">
                         <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f021776f4092c69a36.png" alt="Epiphone Zephyr Bourbon" class="w-full h-full object-cover" loading="lazy">
                     </div>
                 </div>
                 
                 <!-- Content - Right Column -->
-                <div class="lg:col-span-5">
+                <div class="lg:col-span-5" data-aos="fade-left" data-aos-delay="200">
                     <div class="mb-6">
                         <span class="text-amber-400 text-sm tracking-wider uppercase font-light">Chapter One - 1940's</span>
                     </div>
@@ -155,12 +186,12 @@
         <div class="w-full max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
                 <!-- Content - Left Column -->
-                <div class="lg:col-span-5 lg:order-2">
-                    <div class="mb-6">
+                <div class="lg:col-span-5 lg:order-2" data-aos="fade-left" data-aos-delay="200">
+                    <div class="mb-6" data-aos="fade-up" data-aos-delay="100">
                         <span class="text-amber-400 text-sm tracking-wider uppercase font-light">Chapter Two - 1950's</span>
                     </div>
                     
-                    <h2 class="text-5xl font-serif font-bold mb-8 md:text-6xl">
+                    <h2 class="text-5xl font-serif font-bold mb-8 md:text-6xl" data-aos="fade-up" data-aos-delay="200">
                         <span class="text-amber-400">Gibson</span><br>
                         SJ-200
                     </h2>
@@ -210,7 +241,7 @@
                 </div>
                 
                 <!-- Large Image - Right Column -->
-                <div class="lg:col-span-7 lg:sticky lg:top-24 lg:order-1">
+                <div class="lg:col-span-7 lg:sticky lg:top-24 lg:order-1" data-aos="fade-left">
                     <div class="aspect-[4/5] w-full overflow-hidden rounded-[20px]">
                         <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f0ac7fada25927406d.png" alt="Gibson SJ-200 Bourbon" class="w-full h-full object-cover" loading="lazy">
                     </div>
@@ -224,19 +255,19 @@
         <div class="w-full max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
                 <!-- Large Image - Left Column -->
-                <div class="lg:col-span-7 lg:sticky lg:top-24">
+                <div class="lg:col-span-7 lg:sticky lg:top-24" data-aos="fade-right">
                     <div class="aspect-[4/5] w-full overflow-hidden rounded-[20px]">
                         <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f001e5bc023a0470a6.png" alt="Les Paul Goldtop Bourbon" class="w-full h-full object-cover" loading="lazy">
                     </div>
                 </div>
                 
                 <!-- Content - Right Column -->
-                <div class="lg:col-span-5">
-                    <div class="mb-6">
+                <div class="lg:col-span-5" data-aos="fade-left" data-aos-delay="200">
+                    <div class="mb-6" data-aos="fade-up" data-aos-delay="100">
                         <span class="text-amber-400 text-sm tracking-wider uppercase font-light">Chapter Three - 1960's</span>
                     </div>
                     
-                    <h2 class="text-5xl font-serif font-bold mb-8 md:text-6xl">
+                    <h2 class="text-5xl font-serif font-bold mb-8 md:text-6xl" data-aos="fade-up" data-aos-delay="200">
                         <span class="text-amber-400">Les Paul</span><br>
                         Goldtop
                     </h2>
@@ -293,12 +324,12 @@
         <div class="w-full max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
                 <!-- Content - Left Column -->
-                <div class="lg:col-span-5 lg:order-2">
-                    <div class="mb-6">
+                <div class="lg:col-span-5 lg:order-2" data-aos="fade-right" data-aos-delay="200">
+                    <div class="mb-6" data-aos="fade-up" data-aos-delay="100">
                         <span class="text-amber-400 text-sm tracking-wider uppercase font-light">Chapter Four - 1970's</span>
                     </div>
                     
-                    <h2 class="text-5xl font-serif font-bold mb-8 md:text-6xl">
+                    <h2 class="text-5xl font-serif font-bold mb-8 md:text-6xl" data-aos="fade-up" data-aos-delay="200">
                         <span class="text-amber-400">Gibson</span><br>
                         ES-335
                     </h2>
@@ -348,7 +379,7 @@
                 </div>
                 
                 <!-- Large Image - Right Column -->
-                <div class="lg:col-span-7 lg:sticky lg:top-24 lg:order-1">
+                <div class="lg:col-span-7 lg:sticky lg:top-24 lg:order-1" data-aos="fade-left">
                     <div class="aspect-[4/5] w-full overflow-hidden rounded-[20px]">
                         <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f06c431e403db27a48.png" alt="Gibson ES-335 Bourbon" class="w-full h-full object-cover" loading="lazy">
                     </div>
@@ -360,10 +391,10 @@
     <!-- Closing Statement -->
     <section class="py-24 px-4 md:py-32 md:px-12 bg-black">
         <div class="w-full max-w-4xl mx-auto text-center">
-            <p class="text-4xl text-amber-400 font-serif italic leading-relaxed md:text-5xl mb-8">
+            <p class="text-4xl text-amber-400 font-serif italic leading-relaxed md:text-5xl mb-8" data-aos="zoom-in" data-aos-delay="0">
                 This is history you can taste.
             </p>
-            <p class="text-xl text-gray-400 font-light md:text-2xl">
+            <p class="text-xl text-gray-400 font-light md:text-2xl" data-aos="fade-up" data-aos-delay="200">
                 A tribute to his artistry and the soulful story that continues to resonate with fans around the world.
             </p>
         </div>
@@ -373,37 +404,37 @@
     <section class="py-12 px-4 md:py-16 md:px-12 bg-black">
         <div class="w-full max-w-7xl mx-auto">
             <!-- Header -->
-            <div class="text-center mb-10 md:mb-12">
+            <div class="text-center mb-10 md:mb-12" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-4 md:mb-5 text-white">
                     Own the <span class="text-amber-400">Complete Legacy</span>
                 </h2>
-                <p class="text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed font-light">
+                <p class="text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed font-light" data-aos="fade-up" data-aos-delay="100">
                     Four expressions. Four guitars. One legendary story.
                 </p>
             </div>
 
             <!-- Featured Bundle - Split Layout -->
-            <div class="mb-10 md:mb-12 p-5 md:p-6 lg:p-8 bg-gradient-to-br from-amber-400/10 to-amber-600/5 border border-amber-400/20 rounded-[12px] md:rounded-[16px]">
+            <div class="mb-10 md:mb-12 p-5 md:p-6 lg:p-8 bg-gradient-to-br from-amber-400/10 to-amber-600/5 border border-amber-400/20 rounded-[12px] md:rounded-[16px] hover-lift" data-aos="fade-up" data-aos-delay="200">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 md:gap-6 lg:gap-8 items-center">
-                    <div class="lg:col-span-7 mb-5 lg:mb-0">
+                    <div class="lg:col-span-7 mb-5 lg:mb-0" data-aos="fade-right" data-aos-delay="100">
                         <div class="aspect-[4/3] rounded-[12px] md:rounded-[16px] overflow-hidden">
                             <img src="https://storage.googleapis.com/funnel-ai-production/chat/btiwF2DNDeZsyA4HvFSx/PHOTO-2025-08-28-10-24-03.jpg" alt="Strings of Legacy Complete Collection" class="w-full h-full object-cover" loading="lazy">
                         </div>
                     </div>
-                    <div class="lg:col-span-5">
-                        <div class="inline-block bg-amber-400/20 text-amber-400 px-3 py-1.5 rounded-full text-xs font-semibold mb-3">
+                    <div class="lg:col-span-5" data-aos="fade-left" data-aos-delay="200">
+                        <div class="inline-block bg-amber-400/20 text-amber-400 px-3 py-1.5 rounded-full text-xs font-semibold mb-3" data-aos="zoom-in" data-aos-delay="300">
                             BEST VALUE
                         </div>
-                        <h3 class="text-xl md:text-2xl lg:text-3xl font-serif font-bold mb-3 md:mb-4 lg:mb-5">
+                        <h3 class="text-xl md:text-2xl lg:text-3xl font-serif font-bold mb-3 md:mb-4 lg:mb-5" data-aos="fade-up" data-aos-delay="300">
                             Strings of Legacy<br>
                             <span class="text-amber-400">Complete Collection</span>
                         </h3>
-                        <p class="text-sm md:text-base lg:text-lg text-gray-300 mb-5 md:mb-6 leading-relaxed font-light">
+                        <p class="text-sm md:text-base lg:text-lg text-gray-300 mb-5 md:mb-6 leading-relaxed font-light" data-aos="fade-up" data-aos-delay="400">
                             All four expressions in one limited edition set. Each bottle tells a chapter of John Lee Hooker's legendary journey through the decades.
                         </p>
                         <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-boogie-chillen-bourbon-kentucky-straight-bourbon-collection" 
                            target="_blank"
-                           class="inline-block bg-gradient-to-r from-amber-400 to-amber-500 text-black px-5 py-2.5 md:px-6 md:py-3 rounded-lg text-xs md:text-sm lg:text-base font-semibold hover:from-amber-300 hover:to-amber-400 transition-colors">
+                           class="inline-block bg-gradient-to-r from-amber-400 to-amber-500 text-black px-5 py-2.5 md:px-6 md:py-3 rounded-lg text-xs md:text-sm lg:text-base font-semibold hover:from-amber-300 hover:to-amber-400 transition-colors hover-lift" data-aos="fade-up" data-aos-delay="500">
                             Purchase Complete Collection →
                         </a>
                     </div>
@@ -412,10 +443,10 @@
 
             <!-- Individual Products -->
             <div class="mb-8">
-                <h3 class="text-lg md:text-xl lg:text-2xl font-serif font-bold mb-5 md:mb-6 lg:mb-7 text-center text-gray-300">Or Purchase Individually</h3>
+                <h3 class="text-lg md:text-xl lg:text-2xl font-serif font-bold mb-5 md:mb-6 lg:mb-7 text-center text-gray-300" data-aos="fade-up">Or Purchase Individually</h3>
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">
                     <!-- Epiphone Zephyr -->
-                    <div class="bg-gray-950 rounded-[12px] md:rounded-[16px] overflow-hidden border border-gray-800 hover:border-amber-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/10">
+                    <div class="bg-gray-950 rounded-[12px] md:rounded-[16px] overflow-hidden border border-gray-800 hover:border-amber-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/10 hover-lift" data-aos="fade-up" data-aos-delay="0">
                         <div class="aspect-[3/4] md:aspect-[4/5] bg-gray-900 overflow-hidden">
                             <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f021776f4092c69a36.png" alt="Epiphone Zephyr" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" loading="lazy">
                         </div>
@@ -431,7 +462,7 @@
                     </div>
 
                     <!-- Gibson SJ-200 -->
-                    <div class="bg-gray-950 rounded-[12px] md:rounded-[16px] overflow-hidden border border-gray-800 hover:border-amber-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/10">
+                    <div class="bg-gray-950 rounded-[12px] md:rounded-[16px] overflow-hidden border border-gray-800 hover:border-amber-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/10 hover-lift" data-aos="fade-up" data-aos-delay="100">
                         <div class="aspect-[3/4] md:aspect-[4/5] bg-gray-900 overflow-hidden">
                             <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f0ac7fada25927406d.png" alt="Gibson SJ-200" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" loading="lazy">
                         </div>
@@ -447,7 +478,7 @@
                     </div>
 
                     <!-- Les Paul Goldtop -->
-                    <div class="bg-gray-950 rounded-[12px] md:rounded-[16px] overflow-hidden border border-gray-800 hover:border-amber-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/10">
+                    <div class="bg-gray-950 rounded-[12px] md:rounded-[16px] overflow-hidden border border-gray-800 hover:border-amber-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/10 hover-lift" data-aos="fade-up" data-aos-delay="200">
                         <div class="aspect-[3/4] md:aspect-[4/5] bg-gray-900 overflow-hidden">
                             <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f001e5bc023a0470a6.png" alt="Les Paul Goldtop" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" loading="lazy">
                         </div>
@@ -463,7 +494,7 @@
                     </div>
 
                     <!-- Gibson ES-335 -->
-                    <div class="bg-gray-950 rounded-[12px] md:rounded-[16px] overflow-hidden border border-gray-800 hover:border-amber-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/10">
+                    <div class="bg-gray-950 rounded-[12px] md:rounded-[16px] overflow-hidden border border-gray-800 hover:border-amber-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/10 hover-lift" data-aos="fade-up" data-aos-delay="300">
                         <div class="aspect-[3/4] md:aspect-[4/5] bg-gray-900 overflow-hidden">
                             <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f06c431e403db27a48.png" alt="Gibson ES-335" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" loading="lazy">
                         </div>
@@ -479,7 +510,7 @@
                     </div>
 
                     <!-- Boom Boom -->
-                    <div class="bg-gray-950 rounded-[12px] md:rounded-[16px] overflow-hidden border border-gray-800 hover:border-amber-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/10">
+                    <div class="bg-gray-950 rounded-[12px] md:rounded-[16px] overflow-hidden border border-gray-800 hover:border-amber-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/10 hover-lift" data-aos="fade-up" data-aos-delay="400">
                         <div class="aspect-[3/4] md:aspect-[4/5] bg-gray-900 overflow-hidden">
                             <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f021776f1a0ec69a35.png" alt="Boom Boom" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" loading="lazy">
                         </div>
@@ -495,7 +526,7 @@
                     </div>
 
                     <!-- 1948 Boogie Chillen -->
-                    <div class="bg-gray-950 rounded-[12px] md:rounded-[16px] overflow-hidden border border-gray-800 hover:border-amber-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/10">
+                    <div class="bg-gray-950 rounded-[12px] md:rounded-[16px] overflow-hidden border border-gray-800 hover:border-amber-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/10 hover-lift" data-aos="fade-up" data-aos-delay="500">
                         <div class="aspect-[3/4] md:aspect-[4/5] bg-gray-900 overflow-hidden">
                             <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f01c143a50fcf57d36.png" alt="1948 Boogie Chillen" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" loading="lazy">
                         </div>
@@ -625,6 +656,53 @@
 
     <script>
         lucide.createIcons();
+        
+        // Initialize AOS with optimized settings
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out-cubic',
+            once: true,
+            offset: 100,
+            delay: 0,
+            disable: false,
+            startEvent: 'DOMContentLoaded',
+            initClassName: false,
+            animatedClassName: 'aos-animate',
+            useClassNames: false,
+            disableMutationObserver: false,
+            debounceDelay: 50,
+            throttleDelay: 99
+        });
+
+        // Smooth parallax effect for hero background
+        let lastScrollY = window.scrollY;
+        const heroBg = document.querySelector('.hero-bg');
+        
+        function updateParallax() {
+            const scrollY = window.scrollY;
+            if (heroBg && scrollY < window.innerHeight) {
+                const parallaxValue = scrollY * 0.3;
+                heroBg.style.transform = `translateY(${parallaxValue}px)`;
+            }
+            lastScrollY = scrollY;
+        }
+
+        // Throttled scroll handler for performance
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    updateParallax();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
+
+        // Refresh AOS on dynamic content (if needed)
+        window.addEventListener('load', () => {
+            AOS.refresh();
+        });
     </script>
 </body>
 </html>
