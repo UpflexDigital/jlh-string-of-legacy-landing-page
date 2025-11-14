@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings of Legacy: Editorial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-base: 1.5rem;
+            --spacing-lg: 2rem;
+            --radius-base: 1.25rem;
+        }
+        
+        .editorial-text {
+            font-size: clamp(1.5rem, 4vw, 3rem);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 5em;
+            line-height: 0.8;
+            padding-right: 0.1em;
+            color: rgb(251, 191, 36);
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-sans antialiased">
+    
+    <!-- Hero Section - Large Typography -->
+    <section class="relative min-h-screen flex items-center justify-center px-4 py-16 md:px-12 md:py-24 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://storage.googleapis.com/funnel-ai-production/chat/btiwF2DNDeZsyA4HvFSx/PHOTO-2025-08-28-10-24-03.jpg" alt="Bourbon Collection" class="w-full h-full object-cover opacity-20" loading="eager">
+            <div class="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black"></div>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="relative z-10 w-full max-w-6xl mx-auto text-center">
+            <div class="mb-8">
+                <span class="text-amber-400 text-sm tracking-[0.3em] uppercase font-light">Limited Edition</span>
+            </div>
+            
+            <h1 class="editorial-text font-serif font-bold mb-8 text-white">
+                STRINGS<br>
+                <span class="text-amber-400">OF</span><br>
+                LEGACY
+            </h1>
+            
+            <div class="max-w-2xl mx-auto">
+                <p class="text-xl text-gray-300 leading-relaxed font-light md:text-2xl">
+                    Four distinct expressions inspired by the iconic Gibson guitars that shaped John Lee Hooker's legendary sound. Each bourbon tells a chapter of the story.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Editorial Introduction -->
+    <section class="py-16 px-4 md:py-24 md:px-12 bg-black">
+        <div class="w-full max-w-4xl mx-auto">
+            <div class="drop-cap text-2xl text-gray-300 leading-relaxed font-light md:text-3xl">
+                At John Lee Hooker Legacy Spirits, we believe a life's work can be tasted as well as heard. My grandfather, John Lee Hooker, poured his soul into his music, and his iconic Gibson guitars were essential to his powerful sound.
+            </div>
+            
+            <div class="mt-12 pt-12 border-t border-gray-800">
+                <p class="text-xl text-gray-300 leading-relaxed font-light md:text-2xl mb-8">
+                    We are proud to partner with Gibson for the <span class="text-amber-400 font-medium">Strings of Legacy Kentucky Bourbon Collection</span>. This limited edition series features four distinct 8 year old, cask strength single barrels distilled at Bardstown Bourbon Company.
+                </p>
+                
+                <p class="text-3xl text-amber-400 font-serif italic leading-relaxed md:text-4xl text-center mt-16">
+                    "This is history you can taste."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product 1: Epiphone Zephyr - Asymmetric Layout -->
+    <section class="py-16 px-4 md:py-24 md:px-12 bg-gray-950 scroll-mt-16">
+        <div class="w-full max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+                <!-- Large Image - Left Column -->
+                <div class="lg:col-span-7 lg:sticky lg:top-24">
+                    <div class="aspect-[4/5] w-full overflow-hidden rounded-[20px]">
+                        <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f021776f4092c69a36.png" alt="Epiphone Zephyr Bourbon" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                </div>
+                
+                <!-- Content - Right Column -->
+                <div class="lg:col-span-5">
+                    <div class="mb-6">
+                        <span class="text-amber-400 text-sm tracking-wider uppercase font-light">Chapter One - 1940's</span>
+                    </div>
+                    
+                    <h2 class="text-5xl font-serif font-bold mb-8 md:text-6xl">
+                        <span class="text-amber-400">Epiphone</span><br>
+                        Zephyr
+                    </h2>
+                    
+                    <div class="space-y-6 text-lg text-gray-300 leading-relaxed font-light mb-12">
+                        <p>
+                            This single barrel takes us back to our roots, paying tribute to the Epiphone Zephyr, a guitar that likely echoed through the earliest days of Granddad's incredible journey.
+                        </p>
+                        <p class="text-amber-400 italic text-xl">
+                            This bourbon pays homage to those first days, the raw talent and the blood, sweat and tears that launched it all.
+                        </p>
+                    </div>
+                    
+                    <!-- Specs - Large Typography -->
+                    <div class="grid grid-cols-3 gap-6 mb-12 pb-12 border-b border-gray-800">
+                        <div>
+                            <div class="text-amber-400/60 text-xs uppercase tracking-wider mb-2">Age</div>
+                            <div class="text-white font-bold text-3xl">8.5</div>
+                        </div>
+                        <div>
+                            <div class="text-amber-400/60 text-xs uppercase tracking-wider mb-2">Proof</div>
+                            <div class="text-white font-bold text-3xl">122.8</div>
+                        </div>
+                        <div>
+                            <div class="text-amber-400/60 text-xs uppercase tracking-wider mb-2">Mash</div>
+                            <div class="text-white font-bold text-3xl">78/10/12</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tasting Notes -->
+                    <div>
+                        <h3 class="text-amber-400 text-sm uppercase tracking-wider mb-4 font-medium">Tasting Notes</h3>
+                        <div class="space-y-4 text-gray-300">
+                            <div>
+                                <strong class="text-white">Nose:</strong> Sugar cookie, vanilla icing, warm graham cracker
+                            </div>
+                            <div>
+                                <strong class="text-white">Palate:</strong> Sweet stone fruit, apricot, peach, cinnamon
+                            </div>
+                            <div>
+                                <strong class="text-white">Finish:</strong> Clean, satisfying, quick finish
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-500 text-sm mt-8">– Glenn Thomas, Founder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product 2: Gibson SJ-200 - Reversed Layout -->
+    <section class="py-16 px-4 md:py-24 md:px-12 bg-black">
+        <div class="w-full max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+                <!-- Content - Left Column -->
+                <div class="lg:col-span-5 lg:order-2">
+                    <div class="mb-6">
+                        <span class="text-amber-400 text-sm tracking-wider uppercase font-light">Chapter Two - 1950's</span>
+                    </div>
+                    
+                    <h2 class="text-5xl font-serif font-bold mb-8 md:text-6xl">
+                        <span class="text-amber-400">Gibson</span><br>
+                        SJ-200
+                    </h2>
+                    
+                    <div class="space-y-6 text-lg text-gray-300 leading-relaxed font-light mb-12">
+                        <p>
+                            This single barrel release hits close to home for me, a tribute to Granddad's magnificent Gibson SJ-200. This was the guitar I remembered most clearly from growing up, the one he'd often play in the house.
+                        </p>
+                        <p class="text-amber-400 italic text-xl">
+                            Its deep, resonant voice filled our home with the blues, just for me. It wasn't about the stage then; it was about family, about giving his gift.
+                        </p>
+                    </div>
+                    
+                    <!-- Specs -->
+                    <div class="grid grid-cols-3 gap-6 mb-12 pb-12 border-b border-gray-800">
+                        <div>
+                            <div class="text-amber-400/60 text-xs uppercase tracking-wider mb-2">Age</div>
+                            <div class="text-white font-bold text-3xl">8.5</div>
+                        </div>
+                        <div>
+                            <div class="text-amber-400/60 text-xs uppercase tracking-wider mb-2">Proof</div>
+                            <div class="text-white font-bold text-3xl">125.3</div>
+                        </div>
+                        <div>
+                            <div class="text-amber-400/60 text-xs uppercase tracking-wider mb-2">Mash</div>
+                            <div class="text-white font-bold text-3xl">78/10/12</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tasting Notes -->
+                    <div>
+                        <h3 class="text-amber-400 text-sm uppercase tracking-wider mb-4 font-medium">Tasting Notes</h3>
+                        <div class="space-y-4 text-gray-300">
+                            <div>
+                                <strong class="text-white">Nose:</strong> Espresso bean, dark chocolate, charred oak
+                            </div>
+                            <div>
+                                <strong class="text-white">Palate:</strong> Chocolate dipped black cherry, rye spice, molasses
+                            </div>
+                            <div>
+                                <strong class="text-white">Finish:</strong> Cracked pepper, rich soil, cured tobacco
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-500 text-sm mt-8">– Glenn Thomas, Founder</p>
+                </div>
+                
+                <!-- Large Image - Right Column -->
+                <div class="lg:col-span-7 lg:sticky lg:top-24 lg:order-1">
+                    <div class="aspect-[4/5] w-full overflow-hidden rounded-[20px]">
+                        <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f0ac7fada25927406d.png" alt="Gibson SJ-200 Bourbon" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product 3: Les Paul Goldtop -->
+    <section class="py-16 px-4 md:py-24 md:px-12 bg-gray-950">
+        <div class="w-full max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+                <!-- Large Image - Left Column -->
+                <div class="lg:col-span-7 lg:sticky lg:top-24">
+                    <div class="aspect-[4/5] w-full overflow-hidden rounded-[20px]">
+                        <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f001e5bc023a0470a6.png" alt="Les Paul Goldtop Bourbon" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                </div>
+                
+                <!-- Content - Right Column -->
+                <div class="lg:col-span-5">
+                    <div class="mb-6">
+                        <span class="text-amber-400 text-sm tracking-wider uppercase font-light">Chapter Three - 1960's</span>
+                    </div>
+                    
+                    <h2 class="text-5xl font-serif font-bold mb-8 md:text-6xl">
+                        <span class="text-amber-400">Les Paul</span><br>
+                        Goldtop
+                    </h2>
+                    
+                    <div class="space-y-6 text-lg text-gray-300 leading-relaxed font-light mb-12">
+                        <p>
+                            I think the Les Paul Goldtop was always just a different energy for Granddad. It was an edgier, louder sound and this single barrel captures that same fierce vibe.
+                        </p>
+                        <p class="text-amber-400 italic text-xl">
+                            It recalls those periods when he'd really cut loose onstage, that raw intensity that was just so riveting.
+                        </p>
+                    </div>
+                    
+                    <!-- Specs -->
+                    <div class="grid grid-cols-3 gap-6 mb-12 pb-12 border-b border-gray-800">
+                        <div>
+                            <div class="text-amber-400/60 text-xs uppercase tracking-wider mb-2">Age</div>
+                            <div class="text-white font-bold text-3xl">8.5</div>
+                        </div>
+                        <div>
+                            <div class="text-amber-400/60 text-xs uppercase tracking-wider mb-2">Proof</div>
+                            <div class="text-white font-bold text-3xl">122</div>
+                        </div>
+                        <div>
+                            <div class="text-amber-400/60 text-xs uppercase tracking-wider mb-2">Mash</div>
+                            <div class="text-white font-bold text-3xl">78/10/12</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tasting Notes -->
+                    <div>
+                        <h3 class="text-amber-400 text-sm uppercase tracking-wider mb-4 font-medium">Tasting Notes</h3>
+                        <div class="space-y-4 text-gray-300">
+                            <div>
+                                <strong class="text-white">Nose:</strong> Soft vanilla bean, sweet cream, wildflowers
+                            </div>
+                            <div>
+                                <strong class="text-white">Palate:</strong> Creamy, buttery texture, black pepper, honey
+                            </div>
+                            <div>
+                                <strong class="text-white">Finish:</strong> Long, warm finish of seasoned oak and old leather
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-500 text-sm mt-8">– Glenn Thomas, Founder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product 4: Gibson ES-335 -->
+    <section class="py-16 px-4 md:py-24 md:px-12 bg-black">
+        <div class="w-full max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+                <!-- Content - Left Column -->
+                <div class="lg:col-span-5 lg:order-2">
+                    <div class="mb-6">
+                        <span class="text-amber-400 text-sm tracking-wider uppercase font-light">Chapter Four - 1970's</span>
+                    </div>
+                    
+                    <h2 class="text-5xl font-serif font-bold mb-8 md:text-6xl">
+                        <span class="text-amber-400">Gibson</span><br>
+                        ES-335
+                    </h2>
+                    
+                    <div class="space-y-6 text-lg text-gray-300 leading-relaxed font-light mb-12">
+                        <p>
+                            The Gibson ES-335 represents evolution, innovation, and the constant push forward. This bourbon captures that spirit of reinvention.
+                        </p>
+                        <p class="text-amber-400 italic text-xl">
+                            Honoring the guitar that helped Granddad evolve his sound while staying true to his roots.
+                        </p>
+                    </div>
+                    
+                    <!-- Specs -->
+                    <div class="grid grid-cols-3 gap-6 mb-12 pb-12 border-b border-gray-800">
+                        <div>
+                            <div class="text-amber-400/60 text-xs uppercase tracking-wider mb-2">Age</div>
+                            <div class="text-white font-bold text-3xl">8.5</div>
+                        </div>
+                        <div>
+                            <div class="text-amber-400/60 text-xs uppercase tracking-wider mb-2">Proof</div>
+                            <div class="text-white font-bold text-3xl">124.2</div>
+                        </div>
+                        <div>
+                            <div class="text-amber-400/60 text-xs uppercase tracking-wider mb-2">Mash</div>
+                            <div class="text-white font-bold text-3xl">78/10/12</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tasting Notes -->
+                    <div>
+                        <h3 class="text-amber-400 text-sm uppercase tracking-wider mb-4 font-medium">Tasting Notes</h3>
+                        <div class="space-y-4 text-gray-300">
+                            <div>
+                                <strong class="text-white">Nose:</strong> Rich caramel, toasted oak, hint of vanilla
+                            </div>
+                            <div>
+                                <strong class="text-white">Palate:</strong> Complex layers of spice, dark fruit, honey
+                            </div>
+                            <div>
+                                <strong class="text-white">Finish:</strong> Smooth, lingering warmth with oak notes
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-500 text-sm mt-8">– Glenn Thomas, Founder</p>
+                </div>
+                
+                <!-- Large Image - Right Column -->
+                <div class="lg:col-span-7 lg:sticky lg:top-24 lg:order-1">
+                    <div class="aspect-[4/5] w-full overflow-hidden rounded-[20px]">
+                        <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f06c431e403db27a48.png" alt="Gibson ES-335 Bourbon" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing Statement -->
+    <section class="py-24 px-4 md:py-32 md:px-12 bg-black">
+        <div class="w-full max-w-4xl mx-auto text-center">
+            <p class="text-4xl text-amber-400 font-serif italic leading-relaxed md:text-5xl mb-8">
+                This is history you can taste.
+            </p>
+            <p class="text-xl text-gray-400 font-light md:text-2xl">
+                A tribute to his artistry and the soulful story that continues to resonate with fans around the world.
+            </p>
+        </div>
+    </section>
+
+    <!-- Purchase Section -->
+    <section class="py-12 px-4 md:py-16 md:px-12 bg-black">
+        <div class="w-full max-w-7xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-10 md:mb-12">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-4 md:mb-5 text-white">
+                    Own the <span class="text-amber-400">Complete Legacy</span>
+                </h2>
+                <p class="text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed font-light">
+                    Four expressions. Four guitars. One legendary story.
+                </p>
+            </div>
+
+            <!-- Featured Bundle - Split Layout -->
+            <div class="mb-10 md:mb-12 p-5 md:p-6 lg:p-8 bg-gradient-to-br from-amber-400/10 to-amber-600/5 border border-amber-400/20 rounded-[12px] md:rounded-[16px]">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 md:gap-6 lg:gap-8 items-center">
+                    <div class="lg:col-span-7 mb-5 lg:mb-0">
+                        <div class="aspect-[4/3] rounded-[12px] md:rounded-[16px] overflow-hidden">
+                            <img src="https://storage.googleapis.com/funnel-ai-production/chat/btiwF2DNDeZsyA4HvFSx/PHOTO-2025-08-28-10-24-03.jpg" alt="Strings of Legacy Complete Collection" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5">
+                        <div class="inline-block bg-amber-400/20 text-amber-400 px-3 py-1.5 rounded-full text-xs font-semibold mb-3">
+                            BEST VALUE
+                        </div>
+                        <h3 class="text-xl md:text-2xl lg:text-3xl font-serif font-bold mb-3 md:mb-4 lg:mb-5">
+                            Strings of Legacy<br>
+                            <span class="text-amber-400">Complete Collection</span>
+                        </h3>
+                        <p class="text-sm md:text-base lg:text-lg text-gray-300 mb-5 md:mb-6 leading-relaxed font-light">
+                            All four expressions in one limited edition set. Each bottle tells a chapter of John Lee Hooker's legendary journey through the decades.
+                        </p>
+                        <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-boogie-chillen-bourbon-kentucky-straight-bourbon-collection" 
+                           target="_blank"
+                           class="inline-block bg-gradient-to-r from-amber-400 to-amber-500 text-black px-5 py-2.5 md:px-6 md:py-3 rounded-lg text-xs md:text-sm lg:text-base font-semibold hover:from-amber-300 hover:to-amber-400 transition-colors">
+                            Purchase Complete Collection →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Individual Products -->
+            <div class="mb-8">
+                <h3 class="text-lg md:text-xl lg:text-2xl font-serif font-bold mb-5 md:mb-6 lg:mb-7 text-center text-gray-300">Or Purchase Individually</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
+                    <!-- Epiphone Zephyr -->
+                    <div class="bg-gray-950 rounded-[12px] md:rounded-[16px] overflow-hidden border border-gray-800 hover:border-amber-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/10">
+                        <div class="aspect-[3/4] md:aspect-[4/5] bg-gray-900 overflow-hidden">
+                            <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f021776f4092c69a36.png" alt="Epiphone Zephyr" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-3 md:p-4">
+                            <span class="text-amber-400/60 text-[10px] md:text-xs uppercase tracking-wider mb-1 md:mb-2 block">Chapter One - 1940's</span>
+                            <h4 class="text-sm md:text-base lg:text-lg font-serif font-bold mb-2 md:mb-3">Epiphone Zephyr</h4>
+                            <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-straight-bourbon-whiskey-epiphone-zephyr" 
+                               target="_blank"
+                               class="block w-full bg-gradient-to-r from-amber-400 to-amber-500 text-black text-center py-2 md:py-2.5 rounded-md md:rounded-lg text-xs md:text-sm font-semibold hover:from-amber-300 hover:to-amber-400 transition-colors">
+                                Purchase →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Gibson SJ-200 -->
+                    <div class="bg-gray-950 rounded-[12px] md:rounded-[16px] overflow-hidden border border-gray-800 hover:border-amber-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/10">
+                        <div class="aspect-[3/4] md:aspect-[4/5] bg-gray-900 overflow-hidden">
+                            <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f0ac7fada25927406d.png" alt="Gibson SJ-200" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-3 md:p-4">
+                            <span class="text-amber-400/60 text-[10px] md:text-xs uppercase tracking-wider mb-1 md:mb-2 block">Chapter Two - 1950's</span>
+                            <h4 class="text-sm md:text-base lg:text-lg font-serif font-bold mb-2 md:mb-3">Gibson SJ-200</h4>
+                            <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-straight-bourbon-whiskey-gibson-sj-200" 
+                               target="_blank"
+                               class="block w-full bg-gradient-to-r from-amber-400 to-amber-500 text-black text-center py-2 md:py-2.5 rounded-md md:rounded-lg text-xs md:text-sm font-semibold hover:from-amber-300 hover:to-amber-400 transition-colors">
+                                Purchase →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Les Paul Goldtop -->
+                    <div class="bg-gray-950 rounded-[12px] md:rounded-[16px] overflow-hidden border border-gray-800 hover:border-amber-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/10">
+                        <div class="aspect-[3/4] md:aspect-[4/5] bg-gray-900 overflow-hidden">
+                            <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f001e5bc023a0470a6.png" alt="Les Paul Goldtop" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-3 md:p-4">
+                            <span class="text-amber-400/60 text-[10px] md:text-xs uppercase tracking-wider mb-1 md:mb-2 block">Chapter Three - 1960's</span>
+                            <h4 class="text-sm md:text-base lg:text-lg font-serif font-bold mb-2 md:mb-3">Les Paul Goldtop</h4>
+                            <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-kentucky-straight-bourbon-boogie-chillen-bourbon-gibson-les-paul-goldtop" 
+                               target="_blank"
+                               class="block w-full bg-gradient-to-r from-amber-400 to-amber-500 text-black text-center py-2 md:py-2.5 rounded-md md:rounded-lg text-xs md:text-sm font-semibold hover:from-amber-300 hover:to-amber-400 transition-colors">
+                                Purchase →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Gibson ES-335 -->
+                    <div class="bg-gray-950 rounded-[12px] md:rounded-[16px] overflow-hidden border border-gray-800 hover:border-amber-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/10">
+                        <div class="aspect-[3/4] md:aspect-[4/5] bg-gray-900 overflow-hidden">
+                            <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f06c431e403db27a48.png" alt="Gibson ES-335" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-3 md:p-4">
+                            <span class="text-amber-400/60 text-[10px] md:text-xs uppercase tracking-wider mb-1 md:mb-2 block">Chapter Four - 1970's</span>
+                            <h4 class="text-sm md:text-base lg:text-lg font-serif font-bold mb-2 md:mb-3">Gibson ES-335</h4>
+                            <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-kentucky-straight-bourbon-boogie-chillen-bourbon-gibson-es-335" 
+                               target="_blank"
+                               class="block w-full bg-gradient-to-r from-amber-400 to-amber-500 text-black text-center py-2 md:py-2.5 rounded-md md:rounded-lg text-xs md:text-sm font-semibold hover:from-amber-300 hover:to-amber-400 transition-colors">
+                                Purchase →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Boom Boom -->
+                    <div class="bg-gray-950 rounded-[12px] md:rounded-[16px] overflow-hidden border border-gray-800 hover:border-amber-400/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/10">
+                        <div class="aspect-[3/4] md:aspect-[4/5] bg-gray-900 overflow-hidden">
+                            <img src="https://storage.googleapis.com/msgsndr/btiwF2DNDeZsyA4HvFSx/media/6916a5f021776f1a0ec69a35.png" alt="Boom Boom" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-3 md:p-4">
+                            <span class="text-amber-400/60 text-[10px] md:text-xs uppercase tracking-wider mb-1 md:mb-2 block">Additional Release</span>
+                            <h4 class="text-sm md:text-base lg:text-lg font-serif font-bold mb-2 md:mb-3">Boom Boom</h4>
+                            <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-boogie-chillen-bourbon-kentucky-straight-bourbon-collection" 
+                               target="_blank"
+                               class="block w-full bg-gradient-to-r from-amber-400 to-amber-500 text-black text-center py-2 md:py-2.5 rounded-md md:rounded-lg text-xs md:text-sm font-semibold hover:from-amber-300 hover:to-amber-400 transition-colors">
+                                Purchase →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Separator -->
+    <div class="bg-black">
+        <div class="w-full max-w-7xl mx-auto px-4 md:px-12">
+            <div class="border-t border-gray-800"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black">
+        <div class="w-full max-w-7xl mx-auto px-4 md:px-12 py-8 md:py-12 lg:py-16">
+            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12 mb-6 md:mb-8 lg:mb-12">
+                <!-- Brand -->
+                <div class="col-span-2 md:col-span-1">
+                    <h3 class="text-lg md:text-xl lg:text-2xl font-serif font-bold mb-2 md:mb-3 lg:mb-4 text-white">
+                        <span class="text-amber-400">Strings</span> of Legacy
+                    </h3>
+                    <p class="text-gray-400 text-xs md:text-sm leading-relaxed font-light mb-2 md:mb-3 lg:mb-4 hidden md:block">
+                        A tribute to John Lee Hooker's artistry and the soulful story that continues to resonate with fans around the world.
+                    </p>
+                    <p class="text-gray-500 text-[10px] md:text-xs font-light">
+                        John Lee Hooker Legacy Spirits
+                    </p>
+                </div>
+
+                <!-- Collection -->
+                <div class="col-span-1 md:col-span-1">
+                    <h4 class="text-amber-400 text-xs md:text-sm uppercase tracking-wider mb-2 md:mb-3 lg:mb-4 font-light">Collection</h4>
+                    <ul class="space-y-1.5 md:space-y-2 lg:space-y-3">
+                        <li>
+                            <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-boogie-chillen-bourbon-kentucky-straight-bourbon-collection" 
+                               target="_blank"
+                               class="text-gray-400 hover:text-amber-400 transition-colors text-xs md:text-sm font-light">
+                                Complete Collection
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-straight-bourbon-whiskey-epiphone-zephyr" 
+                               target="_blank"
+                               class="text-gray-400 hover:text-amber-400 transition-colors text-xs md:text-sm font-light">
+                                Epiphone Zephyr
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-straight-bourbon-whiskey-gibson-sj-200" 
+                               target="_blank"
+                               class="text-gray-400 hover:text-amber-400 transition-colors text-xs md:text-sm font-light">
+                                Gibson SJ-200
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-kentucky-straight-bourbon-boogie-chillen-bourbon-gibson-les-paul-goldtop" 
+                               target="_blank"
+                               class="text-gray-400 hover:text-amber-400 transition-colors text-xs md:text-sm font-light">
+                                Les Paul Goldtop
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-kentucky-straight-bourbon-boogie-chillen-bourbon-gibson-es-335" 
+                               target="_blank"
+                               class="text-gray-400 hover:text-amber-400 transition-colors text-xs md:text-sm font-light">
+                                Gibson ES-335
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="col-span-2 md:col-span-1 lg:col-span-1">
+                    <h4 class="text-amber-400 text-xs md:text-sm uppercase tracking-wider mb-2 md:mb-3 lg:mb-4 font-light">Legal</h4>
+                    <ul class="space-y-1.5 md:space-y-2 lg:space-y-3">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors text-xs md:text-sm font-light">
+                                Terms & Conditions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors text-xs md:text-sm font-light">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors text-xs md:text-sm font-light">
+                                Shipping Policy
+                            </a>
+                        </li>
+                        <li>
+                            <p class="text-gray-500 text-[10px] md:text-xs font-light mt-2 md:mt-3 lg:mt-4">
+                                Must be 21+ to purchase.<br>
+                                Please drink responsibly.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-4 md:pt-6 lg:pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-2 md:gap-4">
+                    <p class="text-gray-500 text-[10px] md:text-xs font-light text-center md:text-left">
+                        © 2025 John Lee Hooker Legacy Spirits. All rights reserved.
+                    </p>
+                    <p class="text-gray-500 text-[10px] md:text-xs font-light text-center md:text-right">
+                        Available exclusively at <a href="https://seelbachs.com" target="_blank" class="text-amber-400 hover:text-amber-300 transition-colors">Seelbach's</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
